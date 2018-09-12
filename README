@@ -1,0 +1,10 @@
+Zabbix-Read-Only-Filesystem-Check
+=================================
+
+# Author: https://github.com/DeV1L
+
+# This script checks for filesystems that are read only. 
+# If the script returns 0 then the filesystem in read only mode.
+# Add User Parameter to Zabbix Agent config (/etc/zabbix/zabbix_agentd.conf)
+# It should look like this:
+# UserParameter=checkro[*],/etc/zabbix/scripts/checkro.sh $1
